@@ -4,11 +4,11 @@ import time
 from  confluent_kafka import Producer
 
 kafka_config = {
-    'bootstrap.servers': 'pkc-619z3.us-east1.gcp.confluent.cloud:9092',
+    'bootstrap.servers': 'Your Kafka API Bootstrap server',
     'security.protocol': 'SASL_SSL',
     'sasl.mechanisms': 'PLAIN',
-    'sasl.username': 'OQRJN62YJNTKLUT6',
-    'sasl.password': 'MBqs6ADVQtYWS8EyDPDCPSC6jOiOUCSItUBoZ+0kQtk8K5UhXalx4FVIQBhw1o4p',
+    'sasl.username': 'Your Kafka API Key',
+    'sasl.password': 'Your Kafka API Secret',
     'group.id': 'sentiment_analysis_group',
     'auto.offset.reset': 'earliest'
 }

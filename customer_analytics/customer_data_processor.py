@@ -7,11 +7,11 @@ import logging
 
 # Kafka Configuration
 kafka_config = {
-    'bootstrap.servers': 'pkc-619z3.us-east1.gcp.confluent.cloud:9092',
+    'bootstrap.servers': 'Your Kafka Bootstrap server',
     'security.protocol': 'SASL_SSL',
     'sasl.mechanisms': 'PLAIN',
-    'sasl.username': 'OQRJN62YJNTKLUT6',
-    'sasl.password': 'MBqs6ADVQtYWS8EyDPDCPSC6jOiOUCSItUBoZ+0kQtk8K5UhXalx4FVIQBhw1o4p',
+    'sasl.username': 'Your Kafka API Key',
+    'sasl.password': 'Your Kafka API Secret',
     'group.id': 'sentiment_analysis_group',
     'auto.offset.reset': 'earliest'
 }
@@ -19,7 +19,7 @@ kafka_config = {
 KAFKA_TOPIC = "customer_click_data"
 
 # MongoDB Configuration
-uri = "mongodb+srv://pradumkumar0612:7U1D94HdvSi4lGIC@cluster0.lg8iw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = "Your MongoDb Uri"
 
 # Connect to MongoDB
 def connect_mongo():

@@ -15,7 +15,7 @@ st.set_page_config(
 # MongoDB Connection
 @st.cache_resource
 def init_connection():
-    uri = "mongodb+srv://pradumkumar0612:7U1D94HdvSi4lGIC@cluster0.lg8iw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    uri = "Your MongoDb Uri"
     client = MongoClient(uri, server_api=ServerApi('1'))
     return client
 
